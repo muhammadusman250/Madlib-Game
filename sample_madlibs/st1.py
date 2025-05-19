@@ -15,7 +15,7 @@ def madlib():
         story = f"""
         Two friends, **{friend1}** and **{friend2}**, who are both **{profession}**, went to a restaurant and ordered **{drink}**.  
         After ordering, they took out their own **{food}** and started eating.  
-        The waiter came over and said, “No outside food allowed.”  
+        The waiter came over and said, “You are not allowed to eat your own food here”  
         They looked at each other, smiled, and swapped their **{food}** instead!
         """
         st.markdown(story)
