@@ -1,25 +1,31 @@
 import streamlit as st
 
 def madlib():
-    st.header("💡 The Power of Gratitude")
+    st.header("😊 A Funny Lesson About Gratitude")
 
-    boy = st.text_input("write a name for the boy: ")
-    old_man = st.text_input("Write a mame for the old man: ")
-    complaint = st.text_input("Write a complaint about your very annoying friend: ")
+    boy = st.text_input("What's the boy's name?")
+    old_man = st.text_input("What's the old man's name?")
+    complaint = st.text_input("What's something silly your annoying friend always does?")
 
     if boy and old_man and complaint:
         st.markdown("---")
-        st.subheader("📖 Here's your story:")
+        st.subheader("📖 Your Story:")
         story = f"""
-        Once, a boy named **{boy}** lived in a small city. He always complained about **{complaint}**,  
-        wishing for a different life.  
+        There was a boy named **{boy}** who always complained.  
+        The thing that made him super mad? His friend always **{complaint}**!  
+        
+        One day, **{boy}** was walking in the park and met a funny old man named **{old_man}**.  
+        The old man was feeding popcorn to squirrels wearing hats. 🐿️🎩  
 
-        One day, he met a wise man named **{old_man}**, who said,  
-        *"Instead of complaining about what you don’t have, be grateful for what you do.  
-        Gratitude is the key to true happiness."*  
+        **{old_man}** looked at **{boy}** and said,  
+        *"You know, life is more fun when you stop complaining and start being thankful!"*  
 
-        **{boy}** realized his mistake and learned to appreciate the present.
+        **{boy}** thought about it, and started to smile.  
+        He realized maybe life wasn’t so bad — even if his friend was annoying sometimes.  
+
+        From that day on, **{boy}** tried to laugh instead of complain.  
+        And guess what? He felt a lot happier!
         """
         st.markdown(story)
     else:
-        st.info("👈 Fill in all the fields to see your story!")
+        st.info("👈 Fill in all the boxes to see your silly story!")
